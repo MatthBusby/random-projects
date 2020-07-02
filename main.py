@@ -19,7 +19,7 @@ def loop():
 			GPIO.output(RelayPin, GPIO.LOW) # close cir
 
 def destroy():
-	GPIO.output(RelayPin, GPIO.HIGH)     # led off
+	GPIO.output(RelayPin, GPIO.LOW)     # led off
 	GPIO.cleanup()                     # Release resource
 
 if __name__ == '__main__':     # Program start from here
